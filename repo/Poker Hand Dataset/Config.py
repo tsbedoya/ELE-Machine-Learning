@@ -3,9 +3,11 @@ import pandas as pd
 
 parameters = {
     'path': os.path.dirname(sys.path[0]),
-    'path_in': 'c:\\Users\\tatia\\OneDrive - Universidad de San Buenaventura Seccional Medellin\\Universidad\\ELECTIVA MACHINE LEARNING\\ELE-Machine-Learning\\01_data',
+    # 'path_in': 'c:\\Users\\tatia\\OneDrive - Universidad de San Buenaventura Seccional Medellin\\Universidad\\ELECTIVA MACHINE LEARNING\\ELE-Machine-Learning\\01_data',
+    'path_in': os.path.dirname(sys.path[0])+"/../01_data/",
     'path_out': os.path.join(os.path.dirname(sys.path[0]), '02_output')
 }
+print(os.path.dirname(sys.path[0]))
 
 def cargar_datos():
     proyect_name = 'poker-hand'
